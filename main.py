@@ -21,9 +21,15 @@
 def prime_number(lst):
     lst_prime_num = []
     for num in lst:
-        for n in range(2, int(num**0.5)+1):
-            if num % n != 0:
+        if num > 1:
+            is_prime = True
+            for n in range(2, int(num ** 0.5) + 1):
+                if num % n == 0:
+                    is_prime = False
+                    break
+            if is_prime:
                 lst_prime_num.append(num)
+
     return lst_prime_num
 
 
