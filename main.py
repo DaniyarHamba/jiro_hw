@@ -18,16 +18,16 @@
 
 # task 3
 
-# def prime_number(lst):
-#     lst_prime_num = []
-#     for num in lst:
-#         for n in range(2, int(num**0.5)+1):
-#             if num % n == 0:
-#                 lst_prime_num.append(num)
-#     return lst_prime_num
-#
-#
-# print(prime_number([1, 2, 3, 4, 5, 6, 7]))
+def prime_number(lst):
+    lst_prime_num = []
+    for num in lst:
+        for n in range(2, int(num**0.5)+1):
+            if num % n != 0:
+                lst_prime_num.append(num)
+    return lst_prime_num
+
+
+print(prime_number([1, 2, 3, 4, 5, 6, 7]))
 
 
 # task 4
@@ -61,11 +61,11 @@
 
 # task 6
 
-def power_of_lst(pow, lst):
-    new_lst = []
-    for number in lst:
-        calc = number ** pow
-        new_lst.append(calc)
-    return new_lst
-
-print(power_of_lst(2, [2, 3, 4, 5]))
+# def power_of_lst(pow, lst):
+#     new_lst = []
+#     for number in lst:
+#         calc = number ** pow
+#         new_lst.append(calc)
+#     return new_lst
+#
+# print(power_of_lst(2, [2, 3, 4, 5]))
